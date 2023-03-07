@@ -9,6 +9,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { Box, Container } from "@mui/system";
+import Counter from "./components/Counter";
+import List from "./components/List";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/client" element={<Client />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/counter" element={<Counter />} />
+            <Route exact path="/list" element={<List />} />
           </Routes>
         </Router>
       </Container>
