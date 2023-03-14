@@ -11,6 +11,7 @@ import "@fontsource/roboto/700.css";
 import { Box, Container } from "@mui/system";
 import Counter from "./components/Counter";
 import List from "./components/List";
+import Sync from "./components/Sync";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/list" element={<List />} />
           </Routes>
         </Router>
+        <Sync />
       </Container>
     </div>
   );
