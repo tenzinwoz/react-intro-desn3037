@@ -5,6 +5,12 @@ const initialState = {
   items: [],
 };
 
+const json = window.localStorage.getItem("payload");
+if (json !== null && json !== "") {
+  const payload = JSON.parse(json);
+  initialState.field = payload.listReducer.field;
+  initialState.items = payload.listReducer.items;
+}
 export const listSlice = createSlice({
   name: "list",
   initialState,

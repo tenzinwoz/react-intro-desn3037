@@ -23,6 +23,7 @@ function App() {
           </Box>
 
           <Routes>
+            <Route exact path="/" element={<div></div>} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/client" element={<Client />} />
             <Route exact path="/contact" element={<Contact />} />

@@ -10,6 +10,7 @@ export default function Menu() {
   return (
     <div>
       <Tabs value={pathname} aria-label="basic tabs example">
+        <Tab component={Link} to="/" label="Home" value="/" />
         <Tab component={Link} to="/about" label="About" value="/about" />
         <Tab component={Link} to="/client" label="Client" value="/client" />
         <Tab component={Link} to="/contact" label="Contact" value="/contact" />
